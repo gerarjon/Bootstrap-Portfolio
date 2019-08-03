@@ -1,29 +1,197 @@
-html {
-    position: relative;
-    min-height: 100%;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 body {
-    background-image: url("../images/email-pattern.png");
-    margin-bottom: 60px; /* Margin bottom by footer height */
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
 }
 
-nav {
-    background: #4aaaa5 !important;
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top:-4rem;
 }
 
-h1, h2, h3 {
-    color: #4aaaa5; 
+.no-padding-b-t {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
 }
 
-/* Footer */ 
-.footer {
-    position: absolute;
-    bottom: 0;
+/* Navigation */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    background: rgba(0, 0, 0, 0.8)!important;
+    
+}
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar-nav li {
+    padding-right: 1rem;
+}
+.navbar-dark, .navbar-nav, .nav-link {
+    color: #FFF!important;
+}
+
+.navbar-dark, .navbar-nav, .nav-link.active,
+.navbar-dark, .navbar-nav, .nav-link:hover {
+    color: rgba(29, 128, 159)!important;
+}
+
+/* Landing Page */
+
+.home-inner {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url('../images/computer.jpg');
+}
+
+.caption {
     width: 100%;
-    height: 60px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
-    text-align: center;
-    background-color: #666;
-    color: #ccc;
+    max-width: 100%;
+    position: absolute;
+    top: 33%;
+    z-index: 1;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.caption img {
+    height: 15rem;
+}
+
+.caption h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h3 {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #000;
+    padding-bottom: 1.6rem;
+}
+
+
+/* About Page */
+.narrow {
+    width: 75%!important;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+}
+
+.narrow h1 {
+    padding-bottom: 1rem;
+}
+
+/* Portfolio */
+.portfolio-container {
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+}
+
+.portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+}
+  
+.portfolio-item .caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+    color: #fff;
+    margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: none;
+}
+
+    @media (min-width: 992px) {
+    .portfolio-item {
+        max-width: none;
+        margin: 0;
+    }
+    .portfolio-item .caption {
+        -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+        -webkit-clip-path: inset(0px);
+        clip-path: inset(0px);
+    }
+    .portfolio-item .caption .caption-content {
+        -webkit-transition: opacity 0.25s;
+        transition: opacity 0.25s;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+    }
+    .portfolio-item img {
+        object-fit: cover;
+        height: 300px;
+        width: 600px;
+        -webkit-transition: -webkit-clip-path 0.25s ease-out;
+        -webkit-clip-path: inset(-1px);
+        clip-path: inset(-1px);
+    }
+    .portfolio-item:hover img {
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+    }
+    .portfolio-item:hover .caption {
+        background-color: rgba(29, 128, 159, 0.9);
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+    }
+}
+
+/* Contact Section */
+
+footer {
+    background: #40474e;
+    color: #FFF;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem 0.5rem 0 0;
+    color: #FFF;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: rgba(29, 128, 159)!important;
+}
+
+hr.socket {
+    width: 100%;
+    border-top: 0.2rem solid #666b71;
+    margin-top: 3rem;
 }
