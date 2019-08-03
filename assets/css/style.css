@@ -3,7 +3,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-    color: #505962;
+    color: #777;
 }
 
 .offset:before {
@@ -25,7 +25,7 @@ body {
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
-    background: rgba(0, 0, 0, 0.8)!important;
+    background: rgba(0, 0, 0, 0.69)!important;
     
 }
 
@@ -37,12 +37,12 @@ body {
     padding-right: 1rem;
 }
 .navbar-dark, .navbar-nav, .nav-link {
-    color: #FFF!important;
+    color: #ddd!important;
 }
 
 .navbar-dark, .navbar-nav, .nav-link.active,
 .navbar-dark, .navbar-nav, .nav-link:hover {
-    color: rgba(29, 128, 159)!important;
+    color: #4aaaa5!important;
 }
 
 /* Landing Page */
@@ -55,7 +55,7 @@ body {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 33%;
+    top: 30%;
     z-index: 1;
     color: #FFF;
     text-transform: uppercase;
@@ -165,7 +165,7 @@ body {
         clip-path: inset(2rem);
     }
     .portfolio-item:hover .caption {
-        background-color: rgba(29, 128, 159, 0.9);
+        background-color: rgba(74, 170, 165, 0.8);
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem);
     }
@@ -175,23 +175,23 @@ body {
 
 footer {
     background: #40474e;
-    color: #FFF;
+    color: #ccc;
     padding: 2rem 0 2rem;
     margin-top: 1rem;
 }
 
 footer svg.svg-inline--fa {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 1.2rem 0.5rem 0 0;
-    color: #FFF;
+    color: #ccc;
 }
 
 footer svg.svg-inline--fa:hover {
-    color: rgba(29, 128, 159)!important;
+    color: #4aaaa5!important;
 }
 
 hr.socket {
     width: 100%;
-    border-top: 0.2rem solid #666b71;
+    border-top: 0.2rem solid #4aaaa5;
     margin-top: 3rem;
 }
