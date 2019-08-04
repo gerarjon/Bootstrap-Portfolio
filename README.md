@@ -8,7 +8,7 @@ Project is created with:
 * HTML 5
 * CSS 3
 * Bootstrap 4
-Hosted by Github
+* Hosted by Github
 
 ## Support
 If there are any problems with the website, contact the author at 'gerarsuaverdez@gmail.com'.
