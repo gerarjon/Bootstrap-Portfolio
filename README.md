@@ -1,7 +1,7 @@
 # Bootstrap-Portfolio
 
 ## About
-This is an example web development portfolio. The portfolio is a scrolling, single page website with a home page, an 'About Me' section, a portfolio page, and a 'Contact' Section. The phone number in the contact secion is not real. 
+This is an example web development portfolio. The portfolio is a scrolling, single page website with a home page, an 'About Me' section, a portfolio page, and a 'Contact' Section. The phone number in the contact secion is not real. [Deployed](https://gerarjon.github.io/Bootstrap-Portfolio/)
 
 ## Technologies 
 Project is created with: 
