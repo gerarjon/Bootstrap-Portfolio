@@ -1,3 +1,4 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 body {
@@ -6,6 +7,7 @@ body {
     color: #777;
 }
 
+/* Adds padding so that tags lead to slightly above each heading */
 .offset:before {
     display: block;
     content: "";
@@ -135,6 +137,7 @@ body {
     text-transform: none;
 }
 
+    /* Image Effect of Zooming in */
     @media (min-width: 992px) {
     .portfolio-item {
         max-width: none;
@@ -180,6 +183,7 @@ footer {
     margin-top: 1rem;
 }
 
+/* Footer Icons */ 
 footer svg.svg-inline--fa {
     font-size: 2rem;
     margin: 1.2rem 0.5rem 0 0;
@@ -190,6 +194,7 @@ footer svg.svg-inline--fa:hover {
     color: #4aaaa5!important;
 }
 
+/* Adds line above footer */
 hr.socket {
     width: 100%;
     border-top: 0.2rem solid #4aaaa5;
